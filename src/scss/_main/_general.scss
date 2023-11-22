@@ -1,0 +1,80 @@
+main {
+
+    margin-block-start: 0 !important;
+    
+    &.wp-block-group {
+        padding: 0;
+    }
+
+}
+
+body {
+
+    background-color: $lightgrey;
+    
+}
+
+.container-fluid {
+
+    max-width: none !important;
+
+}
+
+img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+.u-faux-box-link {
+    position: relative;
+}
+
+// Overlay styling
+.u-faux-box-link__overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    text-indent: 200%;
+    white-space: nowrap;
+
+    background: transparent;
+    z-index: 2;
+}
+
+#services {
+    scroll-margin-top: 50px;
+}
+
+.polylang_langswitcher {
+    list-style: none;
+    position: absolute !important;
+    top: 8px;
+    left: 160px;
+    width: 100px;
+
+    @include media-breakpoint-down(lg) {
+        top: -17px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        float: left;
+
+        img {
+            width: 20px !important;
+            height: 14px !important;
+        }
+    }
+}
