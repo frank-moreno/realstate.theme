@@ -88,7 +88,7 @@ html.has-modal-open {
 
             li {
     
-                color: $bluegrey;
+                color: $darkblue;
                 padding: 0 10px;
                 font-weight: 400;
 
@@ -100,7 +100,7 @@ html.has-modal-open {
                 &::after {
     
                     content: '';
-                    border-right: 1px $bluegrey solid;
+                    border-right: 1px $darkblue solid;
                     display: block;
                     height: 100%;
                     position: absolute;
@@ -120,7 +120,7 @@ html.has-modal-open {
 
                     background-color: $grey;
                     padding: 10px 20px;
-                    color: $bluegrey !important;
+                    color: $darkblue !important;
 
                     &:hover {
                         background-color: $darkred;
@@ -183,7 +183,7 @@ main ~ .wp-block-template-part {
     
                 li {
         
-                    color: $bluegrey !important;
+                    color: $darkblue !important;
                     padding: 0;
     
                     &:hover {

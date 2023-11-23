@@ -26,21 +26,12 @@ function theme_assets() {
 add_action( 'wp_enqueue_scripts', 'theme_assets' );
 
 
-include( get_template_directory() . '/templates/shortcodes/work_projects.php' );
-
-include( get_template_directory() . '/templates/shortcodes/work_projects_es.php' );
-
-include( get_template_directory() . '/templates/shortcodes/work_projects_cards.php' );
-
-include( get_template_directory() . '/templates/shortcodes/work_projects_cards_es.php' );
-
-include( get_template_directory() . '/templates/shortcodes/post_projects.php' );
-
-include( get_template_directory() . '/templates/shortcodes/post_projects_es.php' );
+// include( get_template_directory() . '/templates/shortcodes/work_projects.php' );
 
 
 
-add_action('wp_head', 'coockie_policy_banner');
+
+// add_action('wp_head', 'coockie_policy_banner');
 function coockie_policy_banner(){
 ?>
     <script src="https://cdn.websitepolicies.io/lib/cconsent/cconsent.min.js" defer></script><script>window.addEventListener("load",function(){window.wpcb.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#ffe4e1","text":"#000000","border":"#c25e5e"},"button":{"background":"#c25e5e","text":"#ffffff"}},"position":"bottom","content":{"href":"https://frank-moreno.com/cookie-policy/"}})});</script>
@@ -87,4 +78,4 @@ function custom_polylang_langswitcher() {
 	return $output;
 }
 
-add_shortcode( 'polylang_langswitcher', 'custom_polylang_langswitcher' );
+// add_shortcode( 'polylang_langswitcher', 'custom_polylang_langswitcher' );

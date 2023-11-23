@@ -67,44 +67,44 @@
                         "fontFamily": "Consolas,Menlo,Monaco,\"SF Mono\",\"DejaVu Sans Mono\",\"Roboto Mono\",\"Courier New\",Courier,monospace"
                     },
                     {
-                        "name": "Cabin",
-                        "slug": "cabin",
-                        "fontFamily": "Cabin,serif",
+                        "name": "Nunito",
+                        "slug": "nunito",
+                        "fontFamily": "Nunito,sans-serif",
                         "fontFace": [
                             {
-                                "fontFamily": "Cabin",
+                                "fontFamily": "Nunito",
                                 "fontWeight": "400 700",
                                 "fontStyle": "normal",
                                 "fontStretch": "normal",
-                                "src": [ "file:./assets/fonts/Cabin/Cabin-VariableFont_wdth,wght.ttf" ]
+                                "src": [ "file:./assets/fonts/Nunito/Nunito-VariableFont_wdth,wght.ttf" ]
                             },
                             {
-                                "fontFamily": "Cabin",
+                                "fontFamily": "Nunito",
                                 "fontWeight": "400 700",
                                 "fontStyle": "italic",
                                 "fontStretch": "normal",
-                                "src": [ "file:./assets/fonts/Cabin/Cabin-Italic-VariableFont_wdth,wght.ttf" ]
+                                "src": [ "file:./assets/fonts/Nunito/Nunito-Italic-VariableFont_wdth,wght.ttf" ]
                             }
                         ]
                     },
                     {
-                        "name": "Exo 2",
-                        "slug": "exo-2",
-                        "fontFamily": "\"Exo 2\",\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif",
+                        "name": "Poppins",
+                        "slug": "poppins",
+                        "fontFamily": "Poppins,sans-serif",
                         "fontFace": [
                             {
-                                "fontFamily": "Exo 2",
+                                "fontFamily": "Poppins",
                                 "fontWeight": "400 900",
                                 "fontStyle": "normal",
                                 "fontStretch": "normal",
-                                "src": [ "file:./assets/fonts/Exo_2/Exo2-VariableFont_wght.ttf" ]
+                                "src": [ "file:./assets/fonts/Poppins/Poppins-VariableFont_wght.ttf" ]
                             },
                             {
                                 "fontFamily": "Exo 2",
                                 "fontWeight": "400 900",
                                 "fontStyle": "italic",
                                 "fontStretch": "normal",
-                                "src": [ "file:./assets/fonts/Exo_2/Exo2-Italic-VariableFont_wght.ttf" ]
+                                "src": [ "file:./assets/fonts/Poppins/Poppins-Italic-VariableFont_wght.ttf" ]
                             }
                         ]
                     }
@@ -129,7 +129,33 @@
                 ],
                 "gradients": [],
                 "link": false,
-                "palette": [],
+                "palette": [
+                    {
+                        "slug": "orange",
+                        "color": "#ff5a3c",
+                        "name": "Orange"
+                    },
+                    {
+                        "slug": "light-grey",
+                        "color": "#f2f6f7",
+                        "name": "Light Grey"
+                    },
+                    {
+                        "slug": "white",
+                        "color": "#fff",
+                        "name": "White"
+                    },
+                    {
+                        "slug": "dark-blue",
+                        "color": "#0a2c3d",
+                        "name": "Dark Blue"
+                    },
+                    {
+                        "slug": "black",
+                        "color": "#000",
+                        "name": "Black"
+                    }
+                ],
                 "text": true,
                 "background": true,
                 "defaultGradients": true,

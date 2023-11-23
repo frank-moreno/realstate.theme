@@ -3,24 +3,20 @@
 
 // @import url('https://fonts.cdnfonts.com/css/lt-galaxy-reverse');
 
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,600;6..12,700&family=Sassy+Frass&display=swap');
-@import url("https://use.typekit.net/dij2ray.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap');
+// @import url("https://use.typekit.net/dij2ray.css");
 
-// $heading-brand-font: 'MuseoModerno', sans-serif;
-$handwriting-font: 'Comforter Brush', cursive;
-$handwriting-2-font: 'Sassy Frass', cursive;
-$heading-font: 'Nunito Sans', sans-serif;
-$body-font: 'Nunito Sans', sans-serif;
+$heading-font: 'Poppins', sans-serif;
+$body-font: 'Nunito', sans-serif;
 
 
 
 // Brand colours
 $white: #FFFFFF;
 $black: #000000;
-$darkblue: #2C2918;
-$bluegrey: #3E3F41;
-$lightgrey: #F7F7F7;
-$gold: #A19B88;
+$darkblue: #0A2C3D;
+$lightgrey: #F2F6F7;
+$orange: #FF5A3C;
 $darkred: #8C3130;
 $red: #9A2A1B;
 $grey: #CCCCCC;
@@ -29,9 +25,8 @@ $colours: (
 	"white": $white,
 	"black": $black,
 	"darkblue": $darkblue,
-	"bluegrey": $bluegrey,
+	"orange": $orange,
 	"lightgrey": $lightgrey,
-	"gold": $gold,
 	"darkred": $darkred,
 	"red": $red,
 	"grey": $grey,	
@@ -53,16 +48,12 @@ body {
 			color: $darkblue !important;
 		}
 
-		&-bluegrey-color {
-			color: $bluegrey !important;
+		&-orange-color {
+			color: $orange !important;
 		}
 
 		&-lightgrey-color {
 			color: $lightgrey !important;
-		}
-
-		&-gold-color {
-			color: $gold !important;
 		}
 
 		&-darkred-color {

@@ -1,5 +1,4 @@
-header,
-header-es {
+header {
 
     position: fixed;
     z-index: 9;
@@ -13,7 +12,7 @@ header-es {
     }
 
     &.scrolled {
-        background-color: $bluegrey;
+        background-color: $darkblue;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
 
@@ -32,7 +31,7 @@ header-es {
         }
 
         // li:last-child a {
-        //     color: $bluegrey !important;
+        //     color: $darkblue !important;
 
         //     &:hover {
         //         color: $white !important;
@@ -47,7 +46,7 @@ header-es {
         color: $white;
         letter-spacing: 1px;
         line-height: 1;
-        font-family: $handwriting-2-font;
+        font-family: $body-font;
 
         @include media-breakpoint-down(lg) {
             width: 60vw;
@@ -55,10 +54,10 @@ header-es {
         }
 
         // a {
-        //     color: $bluegrey;
+        //     color: $darkblue;
         //     text-decoration: none;
         //     border-radius: 100%;
-        //     border-right: 10px $bluegrey solid;
+        //     border-right: 10px $darkblue solid;
         //     padding: 5px 10px 5px 0;
 
         //     &.homepage-logo {
@@ -86,9 +85,9 @@ header-es {
 }
 
 body:not(.home) header .wp-block-site-title{
-    color: $bluegrey;
+    color: $darkblue;
 }
 
 body:lang(es):not(.home) header-es .wp-block-site-title{
-    color: $bluegrey;
+    color: $darkblue;
 }
