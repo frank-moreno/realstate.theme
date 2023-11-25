@@ -78,13 +78,13 @@ p {
 }   
 
 a {
-  color: $darkred;
+  color: $orange;
   text-decoration: none;
   background-color: transparent;
 }           
 
 a:hover {
-  color: $red;
+  color: $orange !important;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }  

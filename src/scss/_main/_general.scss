@@ -8,11 +8,11 @@ main {
 
 }
 
-body {
+// body {
 
-    background-color: $lightgrey;
+//     background-color: $lightgrey;
     
-}
+// }
 
 .container-fluid {
 
@@ -46,35 +46,4 @@ img {
 
     background: transparent;
     z-index: 2;
-}
-
-#services {
-    scroll-margin-top: 50px;
-}
-
-.polylang_langswitcher {
-    list-style: none;
-    position: absolute !important;
-    top: 8px;
-    left: 160px;
-    width: 100px;
-
-    @include media-breakpoint-down(lg) {
-        top: -17px;
-    }
-
-    @include media-breakpoint-down(sm) {
-        display: none;
-    }
-
-    li {
-        display: inline-block;
-        margin-right: 10px;
-        float: left;
-
-        img {
-            width: 20px !important;
-            height: 14px !important;
-        }
-    }
 }
