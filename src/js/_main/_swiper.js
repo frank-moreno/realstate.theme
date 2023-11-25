@@ -1,26 +1,26 @@
 
 
-const swiper = new Swiper('.swiper-projects', {
+const swiper = new Swiper('.swiper-home-top', {
     observeSlideChildren: true,
     slideToClickedSlide: true,
     updateOnWindowResize: true,
-    slidesPerView: 1.5,
+    slidesPerView: .99,
     spaceBetween: 0,
-    // loop: true,
+    loop: true,
     speed: 5000,
-    breakpoints: {
-        320: {
-            slidesPerView: 1
-        },
-        760: {
-            slidesPerView: 1.5
-        },
-        992: {
-            slidesPerView: 1.5
-        }
-    },
+    // breakpoints: {
+    //     320: {
+    //         slidesPerView: 1
+    //     },
+    //     760: {
+    //         slidesPerView: 1
+    //     },
+    //     992: {
+    //         slidesPerView: 1
+    //     }
+    // },
     autoplay: {
-       delay: 4000,
+       delay: 8000,
        disableOnInteraction: false,
     },
     keyboard: {
@@ -31,77 +31,5 @@ const swiper = new Swiper('.swiper-projects', {
     //     nextEl: '.swiper-button-prev',
     //     prevEl: '.swiper-button-next',
     // },
-    grabCursor: true
-  });
-
-  const swiper_projects = new Swiper('.swiper-project-images', {
-    observeSlideChildren: true,
-    slideToClickedSlide: true,
-    updateOnWindowResize: true,
-    slidesPerView: 1.5,
-    spaceBetween: 0,
-    // loop: true,
-    speed: 5000,
-    breakpoints: {
-        320: {
-            slidesPerView: 1
-        },
-        760: {
-            slidesPerView: 1.5
-        },
-        992: {
-            slidesPerView: 1.5
-        }
-    },
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
-    // navigation: {
-    //     nextEl: '.swiper-button-prev',
-    //     prevEl: '.swiper-button-next',
-    // },
-    grabCursor: true
-  });
-
-  const howtigoes = new Swiper('.howitgoes-swiper', {
-    observeSlideChildren: true,
-    slideToClickedSlide: true,
-    updateOnWindowResize: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-    // loop: true,
-    speed: 3000,
-    breakpoints: {
-        320: {
-            slidesPerView: 1
-        },
-        760: {
-            slidesPerView: 1.5
-        },
-        992: {
-            slidesPerView: 2.5
-        }
-    },
-    // autoplay: {
-    //    delay: 2000,
-    //    disableOnInteraction: false,
-    // },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     dynamicBullets: true,
-    //   },
     grabCursor: true
   });

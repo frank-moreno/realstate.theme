@@ -1,5 +1,206 @@
 .home{
 
-    
+    .swiper-home-top {
+        height: 70vh;
+        margin-bottom: 15vh;
+        margin-top: 15vh;
+        width: 100%;
+        padding: 0;
+
+        .swiper-wrapper {
+            width: max-content;
+            overflow: hidden;
+
+            .swiper-slide {
+                text-align:left;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+
+                p:first-child:before {
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background-color: transparent;
+                    display: inline-block;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 2px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-image: url('../../assets/images/svg/agency.svg');
+                }
+            }
+        
+        }
+
+                    
+    }
+
+    form.searchandfilter {
+
+        background-color: #fff;
+        width: 100%;
+        padding: 30px 60px;
+        margin-top: -185px;
+        z-index: 2;
+        box-shadow: 0 0 15px grey;
+        border-radius: 2px;
+
+    }
+
+    .about_btn {
+        background-color: rgba($orange,.1);
+        padding: 5px 20px;
+        border-radius: 25px;
+        width: fit-content;
+    }
+
+    .about_grid {
+
+        .row {
+
+            .col {
+
+                p {
+                    &:before {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: lightgrey;
+                        border-radius: 50%;
+                        padding: 30px;
+                        display: inline-block;
+                        margin-right: 10px;
+                        position: relative;
+                        top: 25px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size:50%;
+                        background-image: url('../../assets/images/svg/smarthome.svg');
+                    }
+
+                }
+
+                &:nth-child(2) {
+                    p:before {
+                        background-image: url('../../assets/images/svg/scene.svg');
+                    }
+                }
+
+                &:nth-child(3) {
+                    p:before {
+                        background-image: url('../../assets/images/svg/lifestyle.svg');
+                    }
+                }
+
+                &:nth-child(4) {
+                    p:before {
+                        background-image: url('../../assets/images/svg/security.svg');
+                    }
+                }
+
+            }
+
+        }
+
+        & + blockquote {
+            background-color: rgba($orange,.1);
+            border-left: 5px $orange solid;
+            padding: 20px 30px;
+            margin: 50px 0;
+            p {
+                display: none;
+            }
+        }
+
+    }
+
+    .details_grid {
+
+        .row {
+            width: 80%;
+        }
+
+        .card{
+
+            border: none;
+            padding-bottom: 30px;
+            margin-top: -20px;
+
+            &:after {
+                content: '';
+                border-right: 1px solid lightgrey;
+                height: 50px;
+                top: 45px;
+                position: absolute;
+                right: 0;
+            }
+
+            .card-body {
+                padding: 0;
+                p {
+                    &:after {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        padding: 30px 15px 30px;
+                        display: inline-block;
+                        margin-right: 10px;
+                        position: relative;
+                        top: 23px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size:60%;
+                        // background-image: url('../../assets/images/svg/bed.svg');
+                    }
+                }
+            }
+
+            .card-footer {
+
+                background-color: transparent;
+                border: none;
+                padding: 0;
+
+            }
+
+        }
+
+        .col{
+            &:nth-child(1) {
+                p:after {
+                    background-image: url('../../assets/images/svg/bed.svg');
+                }
+            }
+            &:nth-child(2) {
+                p:after {
+                    content: "";
+                    background-image: url('../../assets/images/svg/bath.svg') !important;
+                }
+            }
+            &:nth-child(3) {
+                p:after {
+                    content: "";
+                    background-image: url('../../assets/images/svg/car.svg') !important;
+                }
+            }
+            &:nth-child(4) {
+                p:after {
+                    content: "";
+                    background-image: url('../../assets/images/svg/square.svg') !important;
+                }
+                .card {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
 
 }
