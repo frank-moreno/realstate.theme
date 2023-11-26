@@ -119,6 +119,31 @@
 
     }
 
+    #counter-box {
+
+        padding: 50px 0;
+        margin: 100px 0;
+
+        .card {
+
+            background-color: transparent;
+            border: none;
+
+            &-header,
+            &-body,
+            &-footer {
+                // padding: 0;
+                border: none;
+                background-color: transparent;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+
+    }
+
     .details_grid {
 
         .row {
