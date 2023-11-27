@@ -26,7 +26,7 @@ function theme_assets() {
 add_action( 'wp_enqueue_scripts', 'theme_assets' );
 
 
-// include( get_template_directory() . '/templates/shortcodes/work_projects.php' );
+include( get_template_directory() . '/templates/shortcodes/card_properties.php' );
 
 
 

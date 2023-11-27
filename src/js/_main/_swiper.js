@@ -33,3 +33,42 @@ const swiper = new Swiper('.swiper-home-top', {
     // },
     grabCursor: true
   });
+
+
+  const howtigoes = new Swiper('.swiper-properties', {
+    observeSlideChildren: true,
+    slideToClickedSlide: true,
+    updateOnWindowResize: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // loop: true,
+    speed: 3000,
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        760: {
+            slidesPerView: 1.5
+        },
+        992: {
+            slidesPerView: 3.5
+        }
+    },
+    // autoplay: {
+    //    delay: 2000,
+    //    disableOnInteraction: false,
+    // },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     dynamicBullets: true,
+    //   },
+    grabCursor: true
+  });
