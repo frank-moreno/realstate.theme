@@ -47,14 +47,15 @@ function card_properties_shortcode() {
                                 <span class="property-item__status">'.$cat[0]->cat_name.'</span>
                                 <img src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">
                             </div>
-                            <div class="property-item__content">
-                                <h3 class="property-item__title">' . get_the_title() . '</h3>
-                                <div class="property-item__address">
+                            <div class="property-item__address">
                                     <span>' . $address . '</span> 
                                 </div>
-                                <div class="property-item__description>
+                            <div class="property-item__content">
+                                <div class="property-item__price">
                                     <span class="price">' . $price . '</span> 
-                                    <span class="title"> '. get_the_title() .' </span>
+                                </div>
+                                <h3 class="property-item__title">' . get_the_title() . '</h3>
+                                <div class="property-item__description">
                                     <span class="description">' . $description . '</span>
                                 </div>
                                 <div class="property-item__card">
