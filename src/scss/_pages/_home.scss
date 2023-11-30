@@ -294,7 +294,7 @@
 
     .cards-properties{
 
-        // overflow: hidden;
+        overflow: hidden;
 
     }
 
@@ -480,6 +480,20 @@
                 }
 
             }
+
+        }
+
+    }
+
+    .wp-block-query {
+
+        ul {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 25px;
+            gap: 40px;
+            height: 100%;
 
         }
 

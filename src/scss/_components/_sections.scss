@@ -1,6 +1,88 @@
 
 .section {
 
- 
+    &__blogposts {
+
+        ul {
+
+            li {
+
+                min-height: 450px;
+
+                .wp-block-post-featured-image {
+                    height: 100%;
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .wp-block {
+
+                    &-post-title {
+                        position: absolute;
+                        max-width: 30%;
+                        bottom: 0px;
+                        padding-left: 20px;
+                        transition: all 0.2s ease;
+                        a {
+                            color: $white;
+                            font-weight: 700;
+                            line-height: 1.2;
+                        }
+                    }
+
+                    &-post-date {
+                        font-size: 12px;
+                        position: absolute;
+                        bottom: 25px;
+                        padding-left: 140px;    
+                        color: $white;
+                        opacity: 0;
+                        transition: all 0.2s ease;
+                    }
+
+                    &-post-terms {
+                        position: absolute;
+                        top: 20px;
+                        padding-left: 20px;
+                    }
+
+                    &-read-more {
+                        position: absolute;
+                        bottom: 20px;
+                        padding-left: 20px;
+                        opacity: 0;
+                        transition: all 0.2s ease;
+                    }
+
+                } 
+
+                &:hover {
+
+                    .wp-block-post-title {
+                        bottom: 40px;
+                        transition: all 0.2s ease;
+                        a {
+                            color: $white !important;
+                        }
+                    }
+
+                    .wp-block-post-date {
+                        opacity: 1;
+                        transition: all 0.2s ease;
+                    }
+
+                    .wp-block-read-more {
+                        opacity: 1;
+                        transition: all 0.2s ease;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
 
 }
