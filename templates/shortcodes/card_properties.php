@@ -47,9 +47,6 @@ function card_properties_shortcode() {
                                 <span class="property-item__status">'.$cat[0]->cat_name.'</span>
                                 <img src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">
                             </div>
-                            <div class="property-item__address">
-                                    <span>' . $address . '</span> 
-                                </div>
                             <div class="property-item__content">
                                 <div class="property-item__price">
                                     <span class="price">' . $price . '</span> 
@@ -102,6 +99,7 @@ function card_properties_shortcode() {
         }
 
         $output .= '</div>
+                    <div class="swiper-pagination"></div>
                 </div>';
 
     } else {

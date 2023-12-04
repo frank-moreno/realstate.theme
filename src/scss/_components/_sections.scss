@@ -3,11 +3,21 @@
 
     &__blogposts {
 
+        .about_btn {
+            margin: 0 auto 40px;
+
+            & ~ .wp-block-heading {
+                margin-bottom: 50px;
+            }
+        }
+
         ul {
 
             li {
 
                 min-height: 450px;
+                border-radius: 2px;
+                box-shadow: 0 0 15px lightgrey;
 
                 .wp-block-post-featured-image {
                     height: 100%;
@@ -78,6 +88,59 @@
                     }
 
                 }
+
+            }
+
+        }
+
+    }
+
+    &__fixed-block {
+
+        min-height: 400px;
+        margin-bottom: 100px;
+
+        .areoi-background__image {
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__testimonial {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 25px;
+        gap: 40px;
+        height: 100%;
+
+        .testimonial-item {
+
+            background-color: $white;
+            border-radius: 2px;
+            box-shadow: 0 0 15px lightgrey;
+            padding: 40px;
+
+            &__image {
+                float: left;
+                padding-right: 10px;
+
+                img {
+                    width: 70px;
+                    background-color: lightgrey;
+                    border-radius: 100%;
+                }
+            }
+
+            &__name {
+
+                font-weight: 700;
+                font-size: 18px;
+                color: $darkblue;
+                padding-top: 13px;
 
             }
 

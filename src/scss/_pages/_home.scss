@@ -50,6 +50,67 @@
         box-shadow: 0 0 15px grey;
         border-radius: 2px;
 
+        ul {
+
+            display: flex;
+            justify-content: space-between;
+
+            li {
+
+                width: 100%;
+
+                label {
+                    display: none;
+                }
+
+                input {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    border-bottom: 1px solid lightgrey;
+                    padding: 0 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $darkblue;
+                    margin: 30px 0 10px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                input[type="submit"] {
+                    background-color: $orange;
+                    border: none;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 10px 20px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                select {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    border-bottom: 1px solid lightgrey;
+                    padding: 0 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $darkblue;
+                    margin: 30px 0 10px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+            }
+
+        }
+
     }
 
     .about_btn {
@@ -294,13 +355,22 @@
 
     .cards-properties{
 
+        .about_btn {
+            margin: 0 auto 40px;
+
+            & ~ .wp-block-heading {
+                margin-bottom: 50px;
+            }
+        }
+
         overflow: hidden;
 
     }
 
     .swiper-properties {
 
-        padding-bottom: 100px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
 
         .swiper-slide {
 
@@ -494,6 +564,38 @@
             grid-column-gap: 25px;
             gap: 40px;
             height: 100%;
+
+        }
+
+    }
+
+    .testimonials {
+
+        margin-bottom: 100px;
+
+        .container {
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        &::after {
+            content: '';
+            z-index: -1;
+            background-color: #F6F5FC;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -100px;
+            left: 0;
+        }
+
+        .about_btn {
+
+            margin: 0px auto 40px auto;
+
+            & ~ .wp-block-heading {
+                margin-bottom: 50px;
+            }
 
         }
 
