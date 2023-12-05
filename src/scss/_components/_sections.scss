@@ -148,4 +148,19 @@
 
     }
 
+    &__hero-banner {
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+        margin-top: 130px !important;
+    
+        background-image: url('../../assets/images/svg/planos.svg');
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: auto;
+        background-color: #F4F4F8;
+    
+    }
+
 }
