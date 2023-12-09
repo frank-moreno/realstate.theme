@@ -38,13 +38,14 @@ function card_properties_shortcode() {
             $sq_ft = get_field('sq_ft');
             $carpark = get_field('carpark');
             $description = get_field('description');
+            $cat_property = get_field('category_property');
 
-            $cat = get_the_category(); //echo $cat[0]->cat_name;
+            $current_post_taxonomies = get_the_terms( get_the_ID(), 'category_property' );
 
             $output .= '<div class="swiper-slide">
                         <div class="property-item u-faux-box-link">
                             <div class="property-item__image">
-                                <span class="property-item__status">'.$cat[0]->cat_name.'</span>
+                                <span class="property-item__status">'.$current_post_taxonomies[0]->name.'</span>
                                 <img src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">
                             </div>
                             <div class="property-item__content">

@@ -157,7 +157,7 @@
     
         background-image: url('../../assets/images/svg/planos.svg');
         background-repeat: no-repeat;
-        background-position: 75% 100%;
+        background-position: 75% 300%;
         background-size: auto;
         background-color: #F4F4F8;
     
@@ -212,6 +212,26 @@
                 object-fit: cover;
                 max-height: 500px;
             }
+        }
+
+    }
+
+    &__property-item {
+
+        padding: 20px 0 0;
+
+        &__title{
+            font-size: 18px;
+            font-weight: 700;
+            color: $darkblue;
+            margin-bottom: 0px;
+        }
+
+        &__price p{
+            font-size: 18px;
+            font-weight: 400;
+            color: $orange;
+            margin-bottom: 10px;
         }
 
     }
