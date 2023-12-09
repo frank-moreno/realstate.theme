@@ -255,4 +255,255 @@
 
     }
 
+    &__ourservices {
+
+        margin-top: 100px;
+
+        .container > .row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 25px;
+            gap: 40px;
+
+
+           > .col {
+
+                &:nth-child(1){
+                    .card {
+                        .card-header {
+                            min-height: 80px;
+                            width: 100%;
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 60px;
+                                padding-bottom: 20px;
+                                position: absolute;
+                                left: 0;
+                                z-index: 1;
+                                background-image: url("../../assets/images/svg/services-dark-1.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                        }
+
+                        &:hover {
+                            .card-header {
+                                &::before {
+                                    transition: all 0.2s ease;
+                                    background-image: url("../../assets/images/svg/services-orange-1.svg");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2){
+                    .card {
+                        .card-header {
+                            min-height: 80px;
+                            width: 100%;
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 60px;
+                                position: absolute;
+                                left: 0;
+                                z-index: 1;
+                                background-image: url("../../assets/images/svg/services-dark-2.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                        }
+
+                        &:hover {
+                            .card-header {
+                                &::before {
+                                    transition: all 0.2s ease;
+                                    background-image: url("../../assets/images/svg/services-orange-2.svg");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3){
+                    .card {
+                        .card-header {
+                            min-height: 80px;
+                            width: 100%;
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 60px;
+                                position: absolute;
+                                left: 0;
+                                z-index: 1;
+                                background-image: url("../../assets/images/svg/services-dark-3.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                        }
+
+                        &:hover {
+                            .card-header {
+                                &::before {
+                                    transition: all 0.2s ease;
+                                    background-image: url("../../assets/images/svg/services-orange-3.svg");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(4){
+                    .card {
+                        .card-header {
+                            min-height: 80px;
+                            width: 100%;
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 60px;
+                                position: absolute;
+                                left: 0;
+                                z-index: 1;
+                                background-image: url("../../assets/images/svg/services-dark-4.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                        }
+
+                        &:hover {
+                            .card-header {
+                                &::before {
+                                    transition: all 0.2s ease;
+                                    background-image: url("../../assets/images/svg/services-orange-4.svg");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(5){
+                    .card {
+                        .card-header {
+                            min-height: 80px;
+                            width: 100%;
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 60px;
+                                position: absolute;
+                                left: 0;
+                                z-index: 1;
+                                background-image: url("../../assets/images/svg/services-dark-5.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                        }
+
+                        &:hover {
+                            .card-header {
+                                &::before {
+                                    transition: all 0.2s ease;
+                                    background-image: url("../../assets/images/svg/services-orange-5.svg");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(6){
+                    .card {
+                        .card-header {
+                            min-height: 80px;
+                            width: 100%;
+                            &::before {
+                                content: '';
+                                width: 100%;
+                                height: 60px;
+                                position: absolute;
+                                left: 0;
+                                z-index: 1;
+                                background-image: url("../../assets/images/svg/services-dark-6.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                        }
+
+                        &:hover {
+                            .card-header {
+                                &::before {
+                                    transition: all 0.2s ease;
+                                    background-image: url("../../assets/images/svg/services-orange-6.svg");
+                                }
+                            }
+                        }
+                    }
+                }
+
+           }
+
+        }
+
+        .card {
+
+            background: none;
+            border: none;
+            box-shadow: 0 0 10px lightgrey;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            cursor: pointer;
+
+            min-height: 370px;
+
+            &-header,
+            &-body,
+            &-footer {
+                border: none;
+                background-color: transparent;
+            }
+
+            &:hover {
+
+                border-bottom: 2px solid $orange;
+                transition: all 0.2s ease;
+
+            }
+
+
+            &-footer {
+                .wp-block-button__link {
+                    &:after {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background-color: transparent;
+                        display: inline-block;
+                        margin-left: 10px;
+                        position: relative;
+                        top: 2px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        background-image: url('../../assets/images/svg/arrow-right.svg');
+                    }
+                }
+            }
+
+        }
+
+    }
+
 }
