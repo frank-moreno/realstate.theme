@@ -1,5 +1,4 @@
-.page-template-blog,
-.page-template-blog-es {
+.page-template-blog {
 
     .intro {
 
@@ -49,6 +48,19 @@
     @include media-breakpoint-down(md) {
         .wp-block-post-title {
             font-size: 40px !important;
+        }
+    }
+
+    .single-post-block-image .col{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .wp-block-post-featured-image {
+        img {
+            max-height: 350px !important;
+            object-fit: cover !important;
+            object-position: center !important;
         }
     }
 

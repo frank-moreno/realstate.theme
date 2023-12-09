@@ -160,6 +160,25 @@
         background-position: 75% 300%;
         background-size: auto;
         background-color: #F4F4F8;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: $darkblue;
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-size: 18px;
+            font-weight: 400;
+            color: $darkblue;
+            margin-bottom: 20px;
+
+            a {
+                color: $orange;
+                font-weight: 400;
+            }
+        }
     
     }
 
