@@ -521,14 +521,15 @@
             align-items:baseline;
             flex-direction: column;
 
-            padding: 15px 30px  ;
+            padding: 15px 30px;
+            max-width: 90%;
 
             margin-bottom: 20px;
 
             .wp-block-heading,
             p  {
                 margin-bottom: 0;
-                padding-left: 50px;
+                padding-left: 60px;
             }
 
             &::before {

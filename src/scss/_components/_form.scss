@@ -24,14 +24,18 @@ form.wpcf7-form {
     }
 
     input,
+    select,
     textarea {
-        
-        
+        width: 100%;
+        background-color: #F5F5F7;
+        border: none;
+        color: $darkblue;
+        padding: 15px 20px;
 
         &:focus,
         &:active,
         &:hover {
-            outline: none;
+            outline: 1px solid $orange;
         }
 
     }
@@ -57,17 +61,9 @@ form.wpcf7-form {
  
     }
 
-    .wpcf7-checkbox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-    }
-
     .wpcf7-not-valid-tip,
     .wpcf7-response-output {
-        color: $red;
+        color: $orange;
         font-size: 70%;
         float: right;
     }
@@ -84,6 +80,16 @@ form.wpcf7-form {
         font-weight: 300 !important;
         border-radius: 25px;
         font-size: 70%;
+    }
+
+    .wpcf7-submit.btn-contact{
+        background-color: $orange !important;
+        color: $white !important;
+        padding: 15px 40px !important;
+        font-weight: 300 !important;
+        border-radius: 5px;
+        // font-size: 70%;
+        border: none;
     }
 
 }
