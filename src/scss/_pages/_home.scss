@@ -120,66 +120,6 @@
         width: fit-content;
     }
 
-    .about_grid {
-
-        .row {
-
-            .col {
-
-                p {
-                    &:before {
-                        content: '';
-                        width: 15px;
-                        height: 15px;
-                        background-color: lightgrey;
-                        border-radius: 50%;
-                        padding: 30px;
-                        display: inline-block;
-                        margin-right: 10px;
-                        position: relative;
-                        top: 25px;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size:50%;
-                        background-image: url('../../assets/images/svg/smarthome.svg');
-                    }
-
-                }
-
-                &:nth-child(2) {
-                    p:before {
-                        background-image: url('../../assets/images/svg/scene.svg');
-                    }
-                }
-
-                &:nth-child(3) {
-                    p:before {
-                        background-image: url('../../assets/images/svg/lifestyle.svg');
-                    }
-                }
-
-                &:nth-child(4) {
-                    p:before {
-                        background-image: url('../../assets/images/svg/security.svg');
-                    }
-                }
-
-            }
-
-        }
-
-        & + blockquote {
-            background-color: rgba($orange,.1);
-            border-left: 5px $orange solid;
-            padding: 20px 30px;
-            margin: 50px 0;
-            p {
-                display: none;
-            }
-        }
-
-    }
-
     #counter-box {
 
         padding-top: 50px;
