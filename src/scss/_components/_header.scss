@@ -51,6 +51,10 @@ header {
 
     .top-header {
 
+        @include media-breakpoint-down(xl) {
+            display: none;
+        }
+
         p {
             width: auto;
             float: left;

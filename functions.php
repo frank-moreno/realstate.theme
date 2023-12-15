@@ -36,6 +36,8 @@ include( get_template_directory() . '/templates/shortcodes/latest_properties.php
 
 include( get_template_directory() . '/templates/shortcodes/card_agents.php' );
 
+include( get_template_directory() . '/templates/shortcodes/single_properties.php' );
+
 
 
 
