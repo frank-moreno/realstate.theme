@@ -63,7 +63,7 @@ html.has-modal-open {
 }
 
 // media queries by bootstrap breakpoints syntax
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(xl) {
     .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
         display: none;
     }

@@ -40,7 +40,7 @@ const swiper = new Swiper('.swiper-home-top', {
     slideToClickedSlide: true,
     updateOnWindowResize: true,
     slidesPerView: 1,
-    spaceBetween: 40,
+    spaceBetween: 0,
     // loop: true,
     speed: 3000,
     breakpoints: {
