@@ -1,120 +1,129 @@
-html.has-modal-open {
 
-    nav .wp-block-navigation__responsive-container {
-        overflow: hidden;
-        position: fixed;    
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        
-        background-color: lightgray;
-        animation: slideIn 0.5s ease-in;
-        animation-fill-mode:forwards;
-
-        // keep close button visible
-        button.wp-block-navigation__responsive-container-close {
-            display: block;
-        }
-        
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
     }
-
-    @keyframes slideIn {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(0%);
-        }
+    100% {
+        transform: translateX(0%);
     }
+}
 
-    @keyframes slideOut {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(100%);
-        }
+@keyframes slideOut {
+    0% {
+        transform: translateX(0%);
     }
+    100% {
+        transform: translateX(100%);
+    }
+}
 
-	.wp-block-navigation {
+nav .wp-block-navigation__responsive-container-open,
+nav .wp-block-navigation__responsive-container-close{
 
-		&__container {
-			display: block !important;
-		}
-	}
-
-	.main-menu {
-		
-		.short-component {
-			display: block;
-
-            &:not(.is-menu-open) {
-                display: none;
-            }
-		}
-	}
+    display: none;
 
 }
 
-.wp-block-navigation__responsive-container.is-menu-open {
-    display: block;
-}
+#menuToggle{
 
-// media queries by bootstrap breakpoints syntax
-@include media-breakpoint-down(xl) {
-    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-        display: none;
-    }
-
-    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    input {
         display: block;
-    }
-}
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        right: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+        
+        -webkit-touch-callout: none;
 
-.wp-block-navigation__responsive-container {    
-
-    &-content {
-
-        // @include media-breakpoint-up(md) {
-        //     min-width: 500px;
-        // }
-
-        ul {
-
-            justify-content: flex-end;
-            margin-top: -5px;
-
-            li {
-    
-                color: $darkblue !important;
-                padding: 0 10px;
-                font-weight: 700;
-
-                &:hover {
-                    color: $orange !important;
-                    transition: all 0.2s ease;
-                }
-    
-                &.current-menu-item {
-                    color: $orange !important;
-                    font-weight: 700;
-                }
-    
-            }
-    
+        &:checked ~ span {
+        opacity: 1;
+        transform: rotate(-45deg) translate(1px,-1px) !important;
+        background: #232323;
         }
 
-    } 
+        &:checked ~ span:nth-last-child(3) {
+          opacity: 0;
+          transform: rotate(45deg) scale(0.2, 0.2) !important;
+        }
 
-    &.is-menu-open {
-        // &-content {
+        &:checked ~ span:nth-last-child(2) {
+          transform: rotate(45deg) translate(-10px, -10px) !important;
+        }
+
+    }
+
+    span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: #cdcdcd;
+        border-radius: 3px;
+        
+        z-index: 1;
+        
+        transform-origin: 4px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+
+        &:first-child {
+            transform-origin: 0% 0%;
+        }
+
+        &:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+
+    }
+
+} 
+
+
+nav .wp-block-navigation__responsive-container {    
+
+    &.unactive {
+
+        .wp-block-navigation__responsive-container-content {
+            animation: slideOut 0.5s forwards;
+        }
+
+    }
+
+    &.active {
+
+        .wp-block-navigation__responsive-container-content {
+            animation: slideIn 0.5s forwards;
+        }
+
+    }
+
+    &.active,
+    &.unactive {
+
+        display: block;
+        
+
+        .wp-block-navigation__responsive-container-content {
+
+            background-color: $white !important;
+            width: 100vw;
+            height: 100vh;
+
             ul {
 
-                width: 100%;
                 display: flex !important;
                 align-items: center !important;
+                flex-direction: column !important;
 
                 li {
 
@@ -130,7 +139,9 @@ html.has-modal-open {
                 }
 
             }
-        // }
+
+        }
+
     }
 
 }
