@@ -26,6 +26,10 @@ nav .wp-block-navigation__responsive-container-close{
 
 #menuToggle{
 
+    @include media-breakpoint-up(xl) {
+        display: none;
+    }
+
     input {
         display: block;
         width: 40px;
@@ -87,6 +91,10 @@ nav .wp-block-navigation__responsive-container-close{
     }
 
 } 
+
+header.scrolled .wp-block-navigation__responsive-container.active li {
+    color: $darkblue!important;
+}
 
 
 nav .wp-block-navigation__responsive-container {    
@@ -209,11 +217,4 @@ main ~ .wp-block-template-part {
     
     }
 
-}
-
-@include media-breakpoint-up(lg) {
-    .wp-block-navigation__responsive-container-open,
-    .wp-block-navigation__responsive-container-close {
-        display: none;
-    }
 }
