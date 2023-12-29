@@ -11,6 +11,20 @@ header {
         padding-top: 25px;
     }
 
+    .wp-block-navigation-item {
+        color: $darkblue;
+        font-weight: 600;
+
+        &.current-menu-item {
+            color: $orange;
+        }
+
+        &:hover {
+            color: $orange !important;
+            transition: all 0.2s ease;
+        }
+    }
+
     &.scrolled {
         background-color: $darkblue;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -39,8 +53,12 @@ header {
 
         }
 
-        .wp-block-navigation-item{
-            color: $white !important;
+        .wp-block-navigation-item {
+            color: $white;
+
+            &.current-menu-item {
+                color: $orange;
+            }
 
             &:hover {
                 color: $orange !important;
