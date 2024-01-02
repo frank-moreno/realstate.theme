@@ -157,6 +157,10 @@
 
         .row {
             width: 80%;
+
+            @include media-breakpoint-down(md) {
+                width: auto;
+            }
         }
 
         .card{
@@ -246,6 +250,12 @@
 
         .container .row {
             column-gap: 40px;
+
+            @include media-breakpoint-between(md, lg) {
+                .col {
+                    margin-bottom: 50px;
+                }
+            }
         }
 
         .about_btn {
