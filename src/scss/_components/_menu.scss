@@ -30,6 +30,14 @@ nav .wp-block-navigation__responsive-container-close{
         display: none;
     }
 
+    @include media-breakpoint-between(md, xl) {
+        margin-top: -15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-top: 10px;
+    }
+
     input {
         display: block;
         width: 40px;
@@ -37,6 +45,15 @@ nav .wp-block-navigation__responsive-container-close{
         position: absolute;
         top: -7px;
         right: -5px;
+
+        @include media-breakpoint-between(md, xl) {
+            height: 40px;
+            top:12px;
+        }
+
+        @include media-breakpoint-down(md) {
+            top: 5px;
+        }
         
         cursor: pointer;
         
@@ -69,7 +86,7 @@ nav .wp-block-navigation__responsive-container-close{
         margin-bottom: 5px;
         position: relative;
         
-        background: #cdcdcd;
+        background: $orange;
         border-radius: 3px;
         
         z-index: 1;
@@ -126,6 +143,9 @@ nav .wp-block-navigation__responsive-container {
             background-color: $white !important;
             width: 100vw;
             height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
 
             ul {
 
