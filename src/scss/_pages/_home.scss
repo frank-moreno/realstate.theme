@@ -48,6 +48,10 @@
 
     form.searchandfilter {
 
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
         background-color: #fff;
         width: 100%;
         padding: 30px 60px;
@@ -249,7 +253,6 @@
         margin-bottom: 100px;
 
         .container .row {
-            // column-gap: 40px;
 
             display: grid;
             grid-template-columns: repeat(3, 1fr);

@@ -137,16 +137,13 @@ nav .wp-block-navigation__responsive-container {
 
         display: block;
 
-        // .wp-block-navigation__responsive-container {
+        @include media-breakpoint-down(sm) {
+            left: -38vw;
+            position: absolute;
+            right: 50vw;
+            top: 0;
+        }
 
-            @include media-breakpoint-down(sm) {
-                left: -38vw;
-                position: absolute;
-                right: 50vw;
-                top: 0;
-            }
-
-        // }
 
         .wp-block-navigation__responsive-container-content {
 
