@@ -256,6 +256,10 @@
         background-size: auto;
         background-color: #F4F4F8;
 
+        @include media-breakpoint-down(sm) {
+            background-position: 0% 300%;
+        }
+
         h2 {
             font-size: 40px;
             font-weight: 700;
