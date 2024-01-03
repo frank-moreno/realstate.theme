@@ -45,11 +45,11 @@ function card_listed_properties_shortcode() {
                             <div class="row">
                             <div class="property-item u-faux-box-link container">
                                 <div class="row">
-                                    <div class="property-item__image col-4">
+                                    <div class="property-item__image col-lg-4 col-sm-12">
                                         <span class="property-item__status">'.$current_post_taxonomies[0]->name.'</span>
                                         <img src="' . get_the_post_thumbnail_url() . '" alt="' . get_the_title() . '">
                                     </div>
-                                    <div class="property-item__content col-8">
+                                    <div class="property-item__content col-lg-8 col-sm-12">
                                         <div class="property-item__price">
                                             <span class="price">' . $price . '</span> 
                                         </div>

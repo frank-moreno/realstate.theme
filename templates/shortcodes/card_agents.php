@@ -43,14 +43,14 @@ function agents_shortcode() {
                                     <div class="section__agent-item__content">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-lg-2">
+                                                <div class="col-2">
                                                     <div class="section__agent-item__social">
                                                         <a href="' . $facebook . '"><i class="fab fa-facebook-f"></i></a>
                                                         <a href="' . $twitter . '"><i class="fab fa-twitter"></i></a>
                                                         <a href="' . $pinterest . '"><i class="fab fa-pinterest-p"></i></a>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-10 section__agent-item__details"">
+                                                <div class="col-10 section__agent-item__details"">
                                                     <h2 class="section__agent-item__title">' . get_the_title() . '</h2>
                                                     <div class="section__agent-item__role">
                                                         <p>' . $role . '</p>

@@ -541,6 +541,14 @@
             grid-column-gap: 25px;
             gap: 40px;
 
+            @include media-breakpoint-between(md, lg) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include media-breakpoint-down(sm) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
 
            > .col {
 
@@ -942,6 +950,23 @@
 
             border: 20px solid $white;
             box-shadow: 0 0 15px lightgrey;
+
+            @include media-breakpoint-between(md, lg) {
+                min-height: 550px;
+            }
+
+        }
+
+        &__image {
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px;
+            }
+
+            @include media-breakpoint-down(xsm) {
+                margin-bottom: 100px;
+            }
+
         }
 
         &__content {
@@ -953,6 +978,10 @@
             margin: -50px auto 0;
             z-index: 9;
             position: relative;
+
+            // @include media-breakpoint-down(lg) {
+            //     margin-bottom: 50px;
+            // }
 
 
         }
