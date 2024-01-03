@@ -136,16 +136,28 @@ nav .wp-block-navigation__responsive-container {
     &.unactive {
 
         display: block;
-        
+
+        // .wp-block-navigation__responsive-container {
+
+            @include media-breakpoint-down(sm) {
+                left: -38vw;
+                position: absolute;
+                right: 50vw;
+                top: 0;
+            }
+
+        // }
 
         .wp-block-navigation__responsive-container-content {
 
             background-color: $white !important;
             width: 100vw;
             height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
+            @include media-breakpoint-between(md, xl) {
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
 
             ul {
 

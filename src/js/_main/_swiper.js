@@ -54,18 +54,14 @@ const swiper = new Swiper('.swiper-home-top', {
             slidesPerView: 3.5
         }
     },
-    // autoplay: {
-    //    delay: 2000,
-    //    disableOnInteraction: false,
-    // },
+    autoplay: {
+       delay: 2000,
+       disableOnInteraction: false,
+    },
     keyboard: {
         enabled: true,
         onlyInViewport: false,
     },
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
